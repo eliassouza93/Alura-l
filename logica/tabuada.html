@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write('<br><br>')
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var ano = 2021
+    var nacimento = parseInt(prompt('Ano do seu nacimento?'));
+    var soma = ano - nacimento
+    mostra('Sua idade é ' + soma + ' anos.')
+    if (soma >=28){
+        mostra('Voce tem mais de vinte e oito anos.')
+
+    }else {
+        mostra('Você tem menos de vinte e oito anos!')
+    }
+    
+mostra('Fim')
+    
+</script>

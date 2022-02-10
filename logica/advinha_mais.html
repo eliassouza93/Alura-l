@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<style>
+
+    body{
+        background-color: rgba(0, 0, 0, 0.74);
+    }
+    
+   
+
+</style>
+
+
+<input style="background-color: black; color: white; border: solid 2px red; width: 400px; height: 30px; border-radius: 20px; ">
+
+
+
+<button style="background-color: black; color: white;border: solid 2px red; width: 400px; height: 30px; font-size: 20px; border-radius: 20px; margin-top: 300px;margin-left: 70px; margin-right :auto ;">Compare com meu segredo</button>
+
+<script>
+
+    var segredos = Math.random() * 5;
+
+    var input = document.querySelector('input');
+    input.focus();
+    
+
+    function verifica() {
+
+        if (input.value == segredos) {
+            alert('VOCÊ ACERTOU PARABÉNS ! ');
+
+        } else {
+            alert('Você ERROU Tente novamente !!');
+
+        }
+        
+
+        input.value = "";
+        input.focus();
+    }
+
+    
+
+    var button = document.querySelector('button');
+
+    
+
+    button.onclick = verifica;
+
+
+    
+
+
+
+
+
+
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo</title>
+</head>
+<body>
+    <h3>Copa do Mundo!</h3>
+
+
+    <script>
+        
+        function pulaLinha() {
+            document.write('<br><h1><br>');
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var limite = parseInt(prompt('Até que ano?'))
+        var anoCopa = 1930
+
+        while (anoCopa <= limite) {
+            mostra('Teve copa em ' + anoCopa);
+            anoCopa = anoCopa + 4;
+
+        }
+        motras("FIM")
+
+
+
+    </script>
+
+
+</body>
+</html>
